@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="kliz-common" target="17" />
+      <module name="kliz-common.main" target="17" />
+      <module name="kliz-common.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
