@@ -1,3 +1,4 @@
 # Project exclude paths
 /.gradle/
 /kliz-common/build
+/kliz-compose/build

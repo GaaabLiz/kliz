@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/kliz-common" />
+            <option value="$PROJECT_DIR$/kliz-compose" />
           </set>
         </option>
       </GradleProjectSettings>

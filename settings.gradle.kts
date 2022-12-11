@@ -17,3 +17,4 @@ pluginManagement {
 }
 rootProject.name = "kliz"
 include("kliz-common")
+include("kliz-compose")

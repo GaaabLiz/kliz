@@ -10,7 +10,7 @@ plugins {
 }
 
 group = project.properties["project.group"].toString()
-version = project.properties["project.version"].toString()
+version = project.properties["project.common.version"].toString()
 
 kotlin {
     android {
