@@ -1,7 +1,6 @@
 
 val composeVersion: String by properties
 val coroutinesVersion: String by properties
-val atomicfuVersion: String by properties
 
 plugins {
     id("org.jetbrains.kotlin.multiplatform")
@@ -25,17 +24,16 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("org.jetbrains.compose.runtime:runtime:${composeVersion}")
-                implementation("org.jetbrains.compose.foundation:foundation:${composeVersion}")
+                implementation(compose.runtime)
+                implementation(compose.foundation)
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}")
-                implementation("org.jetbrains.kotlinx:atomicfu:${atomicfuVersion}")
+                implementation("org.jetbrains.kotlinx:atomicfu:0.18.4")
                 implementation("ch.qos.logback:logback-classic:1.4.5")
             }
         }
         val androidMain by getting {
             dependencies {
-                //implementation("androidx.activity:activity-compose:1.6.0")
-                implementation("androidx.compose.ui:ui:$composeVersion")
+                implementation(compose.ui)
             }
         }
     }
@@ -50,5 +48,9 @@ android {
     defaultConfig {
         minSdk = project.properties["android.minSdk"].toString().toInt()
         targetSdk = project.properties["android.targetSdk"].toString().toInt()
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 }
