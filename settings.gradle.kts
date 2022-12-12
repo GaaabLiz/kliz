@@ -8,6 +8,7 @@ pluginManagement {
         mavenCentral()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
         maven("https://jitpack.io")
+        maven("https://packages.jetbrains.team/maven/p/skija/maven")
     }
 
     plugins {

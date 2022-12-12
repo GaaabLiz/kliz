@@ -11,6 +11,11 @@ plugins {
 group = project.properties["project.group"].toString()
 version = project.properties["project.compose.version"].toString()
 
+repositories {
+    maven("https://packages.jetbrains.team/maven/p/skija/maven")
+    maven("https://oss.sonatype.org/content/repositories/snapshots/")
+}
+
 kotlin {
     explicitApi()
     android()
@@ -30,6 +35,7 @@ kotlin {
                 implementation(compose.material)
                 implementation(compose.ui)
                 implementation(compose.animation)
+                implementation("ch.qos.logback:logback-classic:1.4.5")
             }
         }
         named("androidMain") {
@@ -50,6 +56,8 @@ kotlin {
                 implementation(compose.material)
                 implementation(compose.desktop.currentOs)
                 implementation(compose.desktop.common)
+                api("moe.tlaster:precompose:1.3.13")
+                api("org.jetbrains.skija:skija-windows:0.93.6")
             }
         }
     }
