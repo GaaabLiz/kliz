@@ -19,4 +19,3 @@ pluginManagement {
 rootProject.name = "kliz"
 include("kliz-common")
 include("kliz-compose")
-include("example-desktop")
