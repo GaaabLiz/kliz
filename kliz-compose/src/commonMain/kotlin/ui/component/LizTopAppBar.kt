@@ -20,14 +20,12 @@ import androidx.compose.ui.input.key.onPreviewKeyEvent
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import org.slf4j.Logger
 
 @Composable
 public fun LizTopAppBar(
     title : String,
     interactionSource : MutableInteractionSource,
     focusRequester: FocusRequester,
-    logger: Logger,
     onKeyEvent : (KeyEvent) -> Boolean,
     onPointerInput : () -> Unit,
     onTopBarClick : () -> Unit,

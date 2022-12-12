@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/../../../kliz-compose/src/desktopMain">
       <sourceFolder url="file://$MODULE_DIR$/../../../kliz-compose/src/desktopMain/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../kliz-compose/src/desktopMain/resources" type="java-resource" />
     </content>
   </component>
 </module>
