@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.focus.focusTarget
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.input.key.KeyEvent
 import androidx.compose.ui.input.key.onPreviewKeyEvent
 import androidx.compose.ui.input.pointer.pointerInput
@@ -25,11 +26,12 @@ import androidx.compose.ui.zIndex
 public fun LizTopAppBar(
     title : String,
     interactionSource : MutableInteractionSource,
-    focusRequester: FocusRequester,
+    focusRequester: FocusRequester = FocusRequester(),
     onKeyEvent : (KeyEvent) -> Boolean,
-    onPointerInput : () -> Unit,
-    onTopBarClick : () -> Unit,
-    onNavIconClick : () -> Unit
+    onPointerInput : () -> Unit = {},
+    onTopBarClick : () -> Unit = {},
+    onNavIconClick : () -> Unit = {},
+    navigationIcon : ImageVector? = null
 ) {
     val scrollState = rememberScrollState()
     TopAppBar(
@@ -46,15 +48,17 @@ public fun LizTopAppBar(
         backgroundColor = MaterialTheme.colors.primary,
         elevation = 10.dp,
         navigationIcon = {
-            IconButton(
-                onClick = { onNavIconClick() },
-                content = {
-                    Icon(
-                        imageVector = Icons.Filled.Menu,
-                        contentDescription = "Open Navigation Drawer"
-                    )
-                }
-            )
+            if(navigationIcon != null) {
+                IconButton(
+                    onClick = { onNavIconClick() },
+                    content = {
+                        Icon(
+                            imageVector = navigationIcon,
+                            contentDescription = "Open Navigation Drawer"
+                        )
+                    }
+                )
+            }
         }
     )
 }

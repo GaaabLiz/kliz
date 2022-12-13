@@ -35,6 +35,7 @@ kotlin {
                 implementation(compose.material)
                 implementation(compose.ui)
                 implementation(compose.animation)
+                implementation(compose.materialIconsExtended)
                 implementation("ch.qos.logback:logback-classic:1.4.5")
             }
         }
@@ -44,6 +45,7 @@ kotlin {
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.material)
+                implementation(compose.materialIconsExtended)
                 implementation(compose.ui)
                 implementation(compose.animation)
                 api("androidx.appcompat:appcompat:1.5.1")
