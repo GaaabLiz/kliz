@@ -22,6 +22,13 @@ dependencies {
     implementation(compose.desktop.currentOs)
     implementation(project(":kliz-compose"))
     implementation(project(":kliz-common"))
+    implementation("cafe.adriel.bonsai:bonsai-core:1.2.0")
+    implementation("cafe.adriel.bonsai:bonsai-file-system:1.2.0")
+    implementation("cafe.adriel.bonsai:bonsai-json:1.2.0")
+    api("org.jetbrains.skija:skija-windows:0.93.6")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:1.6.4")
 }
 
 tasks.withType<KotlinCompile> {

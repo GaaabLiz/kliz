@@ -6,7 +6,7 @@ import androidx.compose.ui.window.Tray
 import androidx.compose.ui.window.WindowPosition
 import androidx.compose.ui.window.WindowState
 import androidx.compose.ui.window.application
-import literal.Resolutions
+import it.gabliz.kliz.compose.literal.Resolutions
 import moe.tlaster.precompose.PreComposeWindow
 
 fun main() = application {
