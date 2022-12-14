@@ -2,6 +2,7 @@ package ui.components
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -20,6 +21,22 @@ public fun Tooltip1(text : String) {
         Text(
             text = text,
             modifier = Modifier.padding(10.dp)
+        )
+    }
+}
+
+@Composable
+public fun Tooltip2(text : String) {
+    Surface(
+        modifier = Modifier.shadow(4.dp),
+        color = Color(255, 255, 210),
+        shape = RoundedCornerShape(4.dp)
+    ) {
+        Text(
+            text = text.toString(),
+            modifier = Modifier.padding(10.dp),
+            style = MaterialTheme.typography.body2,
+            color = MaterialTheme.colors.onSurface
         )
     }
 }

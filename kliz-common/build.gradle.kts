@@ -29,6 +29,8 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}")
                 implementation("org.jetbrains.kotlinx:atomicfu:0.18.4")
                 implementation("ch.qos.logback:logback-classic:1.4.5")
+                implementation("com.google.code.gson:gson:2.10")
+                implementation("org.json:json:20220924")
             }
         }
         val androidMain by getting {

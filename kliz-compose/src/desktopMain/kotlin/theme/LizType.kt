@@ -12,3 +12,10 @@ public val robotoFont : FontFamily = FontFamily(
     Font(resource = "font/roboto/Roboto-Bold.ttf", FontWeight.Bold),
     Font(resource = "font/roboto/Roboto-Black.ttf", FontWeight.Black),
 )
+
+public val gothamRoundedFont : FontFamily = FontFamily(
+    Font(resource = "GothamRoundedMedium_21022.ttf", FontWeight.Normal),
+    Font(resource = "GothamRoundedBold_21016.ttf", FontWeight.Bold),
+    Font(resource = "GothamRoundedBook_21018.ttf", FontWeight.Light),
+    Font(resource = "GothamRoundedLight_21020.ttf", FontWeight.Thin),
+)
