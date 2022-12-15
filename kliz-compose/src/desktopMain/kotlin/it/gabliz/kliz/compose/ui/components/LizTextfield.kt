@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.dp
 import it.gabliz.kliz.compose.theme.athensGray
 import it.gabliz.kliz.compose.theme.doveGray
 import it.gabliz.kliz.compose.theme.silverChalice
-import theme.*
+
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
