@@ -49,7 +49,8 @@ kotlin {
                 implementation(compose.ui)
                 implementation(compose.animation)
                 api("androidx.appcompat:appcompat:1.5.1")
-                api("androidx.core:core-ktx:1.8.0")
+                api("androidx.core:core-ktx:1.9.0")
+                implementation("androidx.compose.ui:ui-text-google-fonts:1.3.2")
             }
         }
         named("desktopMain") {

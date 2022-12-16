@@ -10,4 +10,5 @@ public object LizColorUtils {
     public fun getDefaultDebugIcon(): ImageVector = Icons.Filled.Code
     public fun getDefaultDebugColor() : Color = dodgerBlue
     public fun getDefaultOnSurfaceColor() : Color = Color.White
+
 }
