@@ -1,4 +1,5 @@
 buildscript {
+    val compose_ui_version by extra("1.2.0")
     val kotlinVersion: String by properties
     val gradleToolsVersion: String by properties
 
