@@ -24,3 +24,8 @@ public val persimmon: Color = Color(0xFFFF6448)
 public val darkBurgundy: Color = Color(0xFF82080A)
 public val radicalRed: Color = Color(0xFFFF4757)
 
+public val Purple200 :Color = Color(0xFFBB86FC)
+public val Purple500:Color = Color(0xFF6200EE)
+public val Purple700:Color = Color(0xFF3700B3)
+public val Teal200:Color = Color(0xFF03DAC5)
+

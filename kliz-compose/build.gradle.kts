@@ -81,6 +81,9 @@ android {
         isAbortOnError = false
         isCheckReleaseBuilds = false
     }
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
     compileSdk = project.properties["android.targetSdk"].toString().toInt()
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {

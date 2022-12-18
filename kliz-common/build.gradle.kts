@@ -41,9 +41,18 @@ kotlin {
     }
 }
 
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    kotlinOptions {
+        jvmTarget = project.properties["jvm.target"].toString()
+    }
+}
+
 android {
     lintOptions {
         baseline(file("lint-baseline.xml"))
+    }
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
     }
     compileSdk = project.properties["android.targetSdk"].toString().toInt()
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
