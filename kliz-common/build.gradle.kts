@@ -36,6 +36,9 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(compose.ui)
+                implementation("androidx.core:core-ktx:1.9.0")
+                implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
+                implementation ("androidx.activity:activity-compose:1.6.1")
             }
         }
     }
@@ -52,7 +55,7 @@ android {
         baseline(file("lint-baseline.xml"))
     }
     packagingOptions {
-        resources.excludes.add("META-INF/*")
+        resources.excludes.add("META-INF/INDEX.LIST")
     }
     compileSdk = project.properties["android.targetSdk"].toString().toInt()
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")

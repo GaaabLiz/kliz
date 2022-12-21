@@ -40,23 +40,17 @@ kotlin {
             }
         }
         named("androidMain") {
-            //kotlin.srcDirs("src/jvmMain/kotlin")
             dependencies {
-                implementation(compose.runtime)
-                implementation(compose.foundation)
-                implementation(compose.material)
-                implementation(compose.materialIconsExtended)
-                implementation(compose.ui)
-                implementation(compose.animation)
+                implementation(compose.preview)
                 api("androidx.appcompat:appcompat:1.5.1")
                 api("androidx.core:core-ktx:1.9.0")
                 implementation("androidx.compose.ui:ui-text-google-fonts:1.3.2")
+                implementation("com.jakewharton.timber:timber:5.0.1")
             }
         }
         named("desktopMain") {
             dependencies {
                 implementation(compose.preview)
-                implementation(compose.material)
                 implementation(compose.desktop.currentOs)
                 implementation(compose.desktop.common)
                 api("moe.tlaster:precompose:1.3.13")
