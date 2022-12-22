@@ -8,7 +8,7 @@ plugins {
 }
 
 group = project.properties["project.group"].toString()
-version = project.properties["project.example.version"].toString()
+version = project.properties["project.version"].toString()
 
 repositories {
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")

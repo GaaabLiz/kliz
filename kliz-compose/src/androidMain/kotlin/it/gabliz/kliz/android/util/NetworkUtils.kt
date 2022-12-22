@@ -7,14 +7,12 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
 import androidx.annotation.RequiresPermission
-import it.gabliz.kliz.android.util.LogUtils.addErrorLog
-import it.gabliz.kliz.android.util.LogUtils.addInfoLog
 
 
 /**
  * Funzioni di utilità per quanto riguarda internet e la connettività.
  */
-object NetworkUtility {
+object NetworkUtils {
 
     /**
      * Metodo che controlla se sul device è presente una connessione a internet.

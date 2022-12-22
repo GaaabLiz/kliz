@@ -2,7 +2,7 @@ package it.gabliz.kliz.android.helper
 
 import android.content.Context
 import it.gabliz.kliz.android.util.LogUtils
-import it.gabliz.kliz.android.util.NetworkUtility
+import it.gabliz.kliz.android.util.NetworkUtils
 
 /**
  * Metodo per controllare se la connessione a internet è presente nel telefono.
@@ -22,7 +22,7 @@ fun checkAndRepeatConnections(
     for (i in 1..maxConnectionTry) {
 
         /* controllo connessione */
-        if(NetworkUtility.checkInternetConnection(context)) {
+        if(NetworkUtils.checkInternetConnection(context)) {
             LogUtils.addInfoLog("Connection found!")
             status = ConnectionStatus.CONNECTED
             break

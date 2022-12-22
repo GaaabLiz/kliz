@@ -9,7 +9,7 @@ plugins {
 }
 
 group = project.properties["project.group"].toString()
-version = project.properties["project.compose.version"].toString()
+version = project.properties["project.version"].toString()
 
 repositories {
     maven("https://packages.jetbrains.team/maven/p/skija/maven")

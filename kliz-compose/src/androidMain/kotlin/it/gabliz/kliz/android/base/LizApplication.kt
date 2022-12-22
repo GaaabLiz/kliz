@@ -3,6 +3,7 @@ package it.gabliz.kliz.android.base
 import android.app.Application
 import it.gabliz.kliz.android.util.SystemUtils
 import it.gabliz.kliz.android.util.LogUtils
+import it.gabliz.kliz.android.util.LogUtils.addWarnLog
 import timber.log.Timber
 
 
@@ -18,5 +19,8 @@ class LizApplication : Application() {
         }
     }
 
-
+    override fun onLowMemory() {
+        super.onLowMemory()
+        addWarnLog("onLowMemory problem caught!")
+    }
 }
