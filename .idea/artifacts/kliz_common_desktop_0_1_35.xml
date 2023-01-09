@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kliz-common-desktop-0.1.35">
+    <output-path>$PROJECT_DIR$/kliz-common/build/libs</output-path>
+    <root id="archive" name="kliz-common-desktop-0.1.35.jar">
+      <element id="module-output" name="kliz.kliz-common.desktopMain" />
+    </root>
+  </artifact>
+</component>

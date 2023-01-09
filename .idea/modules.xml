@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/example-desktop/kliz.example-desktop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/example-desktop/kliz.example-desktop.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kliz-android/kliz.kliz-android.main.iml" filepath="$PROJECT_DIR$/.idea/modules/kliz-android/kliz.kliz-android.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kliz-compose/kliz.kliz-compose.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/kliz-compose/kliz.kliz-compose.commonMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kliz-compose/kliz.kliz-compose.desktopMain.iml" filepath="$PROJECT_DIR$/.idea/modules/kliz-compose/kliz.kliz-compose.desktopMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kliz-compose/kliz.kliz-compose.main.iml" filepath="$PROJECT_DIR$/.idea/modules/kliz-compose/kliz.kliz-compose.main.iml" />

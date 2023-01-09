@@ -1,4 +1,4 @@
-package it.gabliz.kliz.compose.theme
+package it.gabliz.kliz.android.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.ExperimentalTextApi
@@ -7,7 +7,6 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.googlefonts.GoogleFont
 import androidx.compose.ui.unit.sp
-import it.gabliz.klizcompose.R
 
 @OptIn(ExperimentalTextApi::class)
 /*

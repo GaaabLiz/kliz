@@ -2,4 +2,5 @@
 /.gradle/
 /kliz-common/build
 /kliz-compose/build
+/kliz-android/build
 /example-desktop/build
