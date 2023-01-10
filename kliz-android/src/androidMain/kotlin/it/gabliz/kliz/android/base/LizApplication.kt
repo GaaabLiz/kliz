@@ -7,20 +7,20 @@ import it.gabliz.kliz.android.util.LogUtils.addWarnLog
 import timber.log.Timber
 
 
-class LizApplication : Application() {
+abstract class LizApplication(private val appLogTag : String) : Application() {
 
     override fun onCreate() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
-        LogUtils.addVerboseLogArray(SystemUtils.getDeviceInformationArray())
+        LogUtils.addVerboseLogArray(SystemUtils.getDeviceInformationArray(), appLogTag)
         SystemUtils.setupExceptionHandler { thread, throwable ->
-            LogUtils.addErrorLog("Application crashed on thread ${thread.name}!")
-            LogUtils.addErrorLog("Crash info: ${throwable.message}")
+            LogUtils.addErrorLog(appLogTag, "Application crashed on thread ${thread.name}!")
+            LogUtils.addErrorLog(appLogTag, "Crash info: ${throwable.message}")
         }
     }
 
     override fun onLowMemory() {
         super.onLowMemory()
-        addWarnLog("onLowMemory problem caught!")
+        addWarnLog(appLogTag, "onLowMemory problem caught!")
     }
 }

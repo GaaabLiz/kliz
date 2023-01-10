@@ -7,15 +7,14 @@ import android.os.PersistableBundle
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import it.gabliz.kliz.android.model.TransitionType
 import it.gabliz.kliz.android.util.LogUtils.addVerboseLog
 import it.gabliz.kliz.android.util.NetworkUtils
 
-abstract class LizBaseComponentActivity : ComponentActivity() {
+abstract class LizBaseComponentActivity(private val appLogTag : String = "") : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
-        addVerboseLog("onCreate of ${this::class.java.simpleName} called!")
+        addVerboseLog(appLogTag, "onCreate of ${this::class.java.simpleName} called!")
         setContentView(getContentView())
         onViewReady(savedInstanceState, intent)
         execFindIds()
@@ -25,35 +24,35 @@ abstract class LizBaseComponentActivity : ComponentActivity() {
 
     override fun onStart() {
         super.onStart()
-        addVerboseLog("onStart of ${this::class.java.simpleName} called!")
+        addVerboseLog(appLogTag, "onStart of ${this::class.java.simpleName} called!")
     }
 
     override fun onRestart() {
         super.onRestart()
-        addVerboseLog("onRestart of ${this::class.java.simpleName} called!")
+        addVerboseLog(appLogTag,"onRestart of ${this::class.java.simpleName} called!")
     }
 
     override fun onResume() {
         super.onResume()
-        addVerboseLog("onResume of ${this::class.java.simpleName} called!")
+        addVerboseLog(appLogTag,"onResume of ${this::class.java.simpleName} called!")
     }
 
     override fun onPause() {
         super.onPause()
-        addVerboseLog("onPause of ${this::class.java.simpleName} called!")
+        addVerboseLog(appLogTag,"onPause of ${this::class.java.simpleName} called!")
     }
 
     override fun onStop() {
         super.onStop()
-        addVerboseLog("onStop of ${this::class.java.simpleName} called!")
+        addVerboseLog(appLogTag,"onStop of ${this::class.java.simpleName} called!")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        addVerboseLog("onDestroy of ${this::class.java.simpleName} called!")
+        addVerboseLog(appLogTag,"onDestroy of ${this::class.java.simpleName} called!")
     }
 
-    protected abstract fun getContentView(): Int
+    protected open fun getContentView(): Int { return 0 }
     protected open fun onViewReady(savedInstanceState: Bundle?, intent: Intent?) {}
     protected open fun execFindIds() {}
     protected open fun execListeners() {}
