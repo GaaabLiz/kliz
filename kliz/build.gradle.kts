@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "io.github.gaaabliz"
-version = "1.3.0"
+version = "2.0.0"
 
 kotlin {
     jvm()
@@ -35,7 +35,7 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.gaaabliz"
+    namespace = "io.github.gaaabliz.kliz"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -55,27 +55,27 @@ mavenPublishing {
 
     pom {
         name = "Kliz"
-        description = "A library."
-        inceptionYear = "2024"
-        url = "https://github.com/kotlin/multiplatform-library-template/"
+        description = "My personal Kotlin Multiplatform library."
+        inceptionYear = "2025"
+        url = "https://github.com/GaaabLiz/kliz"
         licenses {
             license {
-                name = "XXX"
-                url = "YYY"
-                distribution = "ZZZ"
+                name = "The Apache License, Version 2.0"
+                url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+                distribution = "https://www.apache.org/licenses/LICENSE-2.0.txt"
             }
         }
         developers {
             developer {
-                id = "XXX"
+                id = "Gaaabliz"
                 name = "Gabliz"
-                url = "ZZZ"
+                url = "https://github.com/GaaabLiz"
             }
         }
         scm {
-            url = "XXX"
-            connection = "YYY"
-            developerConnection = "ZZZ"
+            url = "https://github.com/GaaabLiz/kliz"
+            connection = "scm:git:git://github.com/GaaabLiz/kliz.git"
+            developerConnection = "scm:git:ssh://github.com:GaaabLiz/kliz.git"
         }
     }
 }
