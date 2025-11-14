@@ -1,4 +1,4 @@
-package io.github.kotlin.fibonacci
+package io.github.gaaabliz.kliz.examples
 
-actual val firstElement: Int = 1
-actual val secondElement: Int = 2
+actual val firstElement: Int = 0
+actual val secondElement: Int = 1

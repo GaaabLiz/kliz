@@ -1,4 +1,6 @@
 @file:Suppress("NOTHING_TO_INLINE")
+
+
 package io.github.gaaabliz.kliz.common.base
 
 import java.io.File

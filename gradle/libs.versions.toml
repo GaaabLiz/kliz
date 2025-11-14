@@ -4,9 +4,11 @@ kotlin = "2.2.21"
 android-minSdk = "26"
 android-compileSdk = "36"
 vanniktechMavenPublish = "0.35.0"
+apache-commons = "3.19.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+apache-commons = { module = "org.apache.commons:commons-lang3",  version.ref = "apache-commons"}
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }

@@ -1,5 +1,8 @@
-package io.github.kotlin.fibonacci
+package io.github.gaaabliz.kliz.commonTest
 
+import io.github.gaaabliz.kliz.examples.firstElement
+import io.github.gaaabliz.kliz.examples.generateFibi
+import io.github.gaaabliz.kliz.examples.secondElement
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

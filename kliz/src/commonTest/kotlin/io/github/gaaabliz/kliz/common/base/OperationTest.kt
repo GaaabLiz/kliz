@@ -1,5 +1,8 @@
-package io.github.gaaabliz.kliz.common.base
+package io.github.gaaabliz.kliz.base
 
+import io.github.gaaabliz.kliz.common.base.CustomOperation
+import io.github.gaaabliz.kliz.common.base.Operation
+import io.github.gaaabliz.kliz.common.base.safeCall
 import kotlin.test.*
 
 class OperationTest {
