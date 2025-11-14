@@ -26,6 +26,7 @@ kotlin {
                 implementation(libs.apache.commons)
                 implementation(libs.gson)
                 implementation(libs.json)
+                implementation(libs.kotlinx.coroutines.core)
             }
         }
         val commonTest by getting {
