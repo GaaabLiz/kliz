@@ -6,11 +6,13 @@ android-compileSdk = "36"
 vanniktechMavenPublish = "0.35.0"
 apache-commons = "3.19.0"
 gson = "2.13.2"
+json = "20250517"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 apache-commons = { module = "org.apache.commons:commons-lang3",  version.ref = "apache-commons"}
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+json = { module = "org.json:json", version.ref = "json" }
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
