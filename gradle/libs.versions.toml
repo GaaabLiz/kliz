@@ -1,6 +1,10 @@
 [versions]
 agp = "8.13.1"
 kotlin = "2.2.21"
+compose-plugin = "1.6.10"
+compose = "1.6.10"
+compose-compiler = "1.5.14"
+androidx-activity-compose = "1.9.0"
 kotlinxCoroutinesCore = "1.10.2"
 android-minSdk = "26"
 android-compileSdk = "36"
@@ -15,8 +19,17 @@ apache-commons = { module = "org.apache.commons:commons-lang3",  version.ref = "
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 json = { module = "org.json:json", version.ref = "json" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 vanniktech-mavenPublish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktechMavenPublish" }
+android-lint = { id = "com.android.lint", version.ref = "agp" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

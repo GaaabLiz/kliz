@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "kliz"
 include(":kliz")
+include(":kliz-compose")
