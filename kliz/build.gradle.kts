@@ -21,10 +21,10 @@ kotlin {
         }
     }
 
-    if (HostManager.hostIsMac) {
-        iosSimulatorArm64()
-        iosX64()
-    }
+    //if (HostManager.hostIsMac) {
+      //  iosSimulatorArm64()
+      //  iosX64()
+    //}
 
     sourceSets {
         val commonMain by getting {
