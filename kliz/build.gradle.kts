@@ -49,6 +49,11 @@ kotlin {
                 implementation(libs.androidx.lifecycle.service)
             }
         }
+        val jvmMain by getting {
+            dependencies {
+                implementation(libs.logback.classic)
+            }
+        }
     }
 }
 
