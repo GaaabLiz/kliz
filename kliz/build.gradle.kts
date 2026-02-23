@@ -40,6 +40,15 @@ kotlin {
                 implementation(libs.kotlin.test)
             }
         }
+        val androidMain by getting {
+            dependencies {
+                implementation(libs.timber)
+                implementation(libs.androidx.core)
+                implementation(libs.androidx.activity.ktx)
+                implementation(libs.androidx.appcompat)
+                implementation(libs.androidx.lifecycle.service)
+            }
+        }
     }
 }
 

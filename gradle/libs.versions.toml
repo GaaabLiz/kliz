@@ -12,6 +12,11 @@ vanniktechMavenPublish = "0.35.0"
 apache-commons = "3.19.0"
 gson = "2.13.2"
 json = "20250517"
+timber = "5.0.1"
+core = "1.17.0"
+activityKtx = "1.12.4"
+appcompat = "1.7.1"
+lifecycleService = "2.10.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -25,6 +30,11 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = 
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+androidx-core = { group = "androidx.core", name = "core", version.ref = "core" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycleService" }
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
