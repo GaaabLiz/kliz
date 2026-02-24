@@ -24,6 +24,10 @@ accompanistSwiperefresh = "0.25.1"
 accompanistPlaceholderMaterial = "0.33.0"
 coilCompose = "2.3.0"
 lottieCompose = "6.1.0"
+playServicesLocation = "21.2.0"
+playServicesMaps = "18.2.0"
+playServicesPlugin = "4.4.0"
+playServicesAuth = "21.0.0"
 
 
 [libraries]
@@ -48,6 +52,9 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 androidx-lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycleService" }
 logback-classic = { module = "ch.qos.logback:logback-classic",  version.ref = "logback-classic"}
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
