@@ -2,7 +2,7 @@
 agp = "8.13.1"
 kotlin = "2.2.21"
 compose-plugin = "1.6.10"
-compose = "1.6.10"
+compose = "1.6.8"
 compose-compiler = "1.5.14"
 androidx-activity-compose = "1.9.0"
 kotlinxCoroutinesCore = "1.10.2"
@@ -20,8 +20,17 @@ appcompat = "1.7.1"
 lifecycleService = "2.10.0"
 jetbrainsKotlinJvm = "2.2.21"
 firebaseBom = "32.7.4"
+accompanistSwiperefresh = "0.25.1"
+accompanistPlaceholderMaterial = "0.33.0"
+coilCompose = "2.3.0"
+lottieCompose = "6.1.0"
+
 
 [libraries]
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieCompose" }
+accompanist-placeholder-material = { module = "com.google.accompanist:accompanist-placeholder-material", version.ref = "accompanistSwiperefresh" }
+accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 apache-commons = { module = "org.apache.commons:commons-lang3",  version.ref = "apache-commons"}
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
@@ -30,7 +39,6 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }

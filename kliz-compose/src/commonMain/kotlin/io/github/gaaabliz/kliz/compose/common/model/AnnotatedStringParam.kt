@@ -1,4 +1,4 @@
-package io.github.gaaabliz.kliz.compose.model
+package io.github.gaaabliz.kliz.compose.common.model
 
 import androidx.compose.ui.text.SpanStyle
 

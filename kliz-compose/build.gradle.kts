@@ -35,9 +35,13 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
+                implementation(compose.components.uiToolingPreview)
                 api(compose.ui)
+                implementation(compose.materialIconsExtended)
                 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
                 api(compose.components.resources)
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.apache.commons)
             }
         }
         val commonTest by getting {
@@ -45,6 +49,22 @@ kotlin {
                 implementation(libs.kotlin.test)
             }
         }
+        val androidMain by getting {
+            dependencies {
+                implementation(libs.compose.ui.tooling)
+                implementation(compose.components.uiToolingPreview)
+                implementation(libs.coil.compose)
+                implementation(libs.accompanist.swiperefresh)
+                implementation(libs.lottie.compose)
+            }
+        }
+        val jvmMain by getting {
+            dependencies {
+                implementation(libs.logback.classic)
+                implementation(compose.desktop.common)
+            }
+        }
+
     }
 }
 
