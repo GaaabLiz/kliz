@@ -18,6 +18,8 @@ core = "1.17.0"
 activityKtx = "1.12.4"
 appcompat = "1.7.1"
 lifecycleService = "2.10.0"
+jetbrainsKotlinJvm = "2.2.21"
+firebaseBom = "32.7.4"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -37,6 +39,7 @@ androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", ve
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycleService" }
 logback-classic = { module = "ch.qos.logback:logback-classic",  version.ref = "logback-classic"}
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
@@ -45,3 +48,4 @@ vanniktech-mavenPublish = { id = "com.vanniktech.maven.publish", version.ref = "
 android-lint = { id = "com.android.lint", version.ref = "agp" }
 compose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }

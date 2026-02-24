@@ -1,4 +1,5 @@
 import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.gaaabliz.kliz.android.model.AppSettingType
 
 data class AppSettingInfo(
     val settingId : String,
